@@ -41,7 +41,7 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
             })}>
 
                 <h2>New User</h2>
-                <div>
+                <div className='name'>
                     <i className='fas fa-user'></i>
                     <input 
                     {...register("first_name")} 
@@ -75,10 +75,10 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
                     type="date" 
                     />
                 </div>
-                <input type="submit" />
-                
+                <button type="submit" className='button-submit'>upload</button>
+                {toEdit && <button onClick={ () => selectUser()}>Cancel</button>}
             </form>
-            {toEdit && <button onClick={ () => selectUser()}>cancel</button>}
+            
         </div>    
     );
 };
