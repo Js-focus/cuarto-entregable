@@ -4,3 +4,92 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
 }
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li{
+  line-height: .8rem;
+}
+i{
+  font-size: 20px;
+  color: rgba(0, 0, 0, .8);
+}
+form{
+  padding: 2.5rem;
+}
+h2{
+  font-size: 26px;
+}
+
+
+.App{
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.form{
+  position: fixed;
+  right: 0px;
+  width: 40%;
+  height: 100%;
+  background-color: white;
+  text-align: left;
+}
+
+
+
+
+/*ESTILOS DE UserList*/
+.card{
+  padding: 1rem;
+  width: 57.5%;
+  height: calc(100vh - 2rem);
+  display: block;
+  bottom: 0px;
+  left: 0;
+  top: 0;
+  grid-template-columns: auto;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  background-color: aquamarine;
+
+}
+.card-list{
+  background-color: white;
+  padding: 2rem;
+  width: 75%;
+  margin: 2.5rem auto;
+  border-radius: 1rem;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.li-name{
+  font-size: 20px;
+  font-weight: 700;
+}
+.li-email{
+  color: rgba(0, 0, 0, .6);
+}
+.buttons-list button{
+  margin: 0 5px;
+  background: #fff;
+  border: none;
+  cursor: pointer;
+}
+.icon-birthday{
+  font-size: 1rem;
+  color: black;
+}
+.icon-delete{
+  color: rgb(239, 83, 88);
+}
+.icon-pencil{
+  color: rgba(0, 0, 0, .8);
+}

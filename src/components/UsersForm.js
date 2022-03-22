@@ -34,7 +34,7 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
         }
     }
     return (
-        <div>
+        <div className='form'>
             <form onSubmit={handleSubmit((data) => {
                 submit(data)
                 
@@ -42,6 +42,7 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
 
                 <h2>New User</h2>
                 <div>
+                    <i className='fas fa-user'></i>
                     <input 
                     {...register("first_name")} 
                     placeholder="first name" 
@@ -53,14 +54,14 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
                     />
                 </div>
                 <div>
-                    <label> </label>
+                    <i className='fas fa-envelope'></i>
                     <input 
                     {...register("email")} 
                     placeholder="email"
                     />
                 </div>
                 <div>
-                    <label></label>
+                    <i className='fas fa-lock'></i>
                     <input 
                     {...register("password")} 
                     placeholder="password"
@@ -68,7 +69,7 @@ const UsersForm = ({register, handleSubmit, setDataUser, addUser, reset, selectU
                     />
                 </div>
                 <div>
-                    <label></label>
+                    <i className='fas fa-birthday-cake'></i>
                     <input 
                     {...register("birthday")} 
                     type="date" 
